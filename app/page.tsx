@@ -1,5 +1,11 @@
-import { redirect } from "next/navigation"
+import UsuariosPage from './usuarios/page'
+import DashboardPage from './dashboard/page'
 
 export default function Home() {
-  redirect("/dashboard")
+  return (
+    <>
+      <UsuariosPage />
+      <DashboardPage />
+    </>
+  )
 }
